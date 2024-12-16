@@ -14,6 +14,8 @@ import { MainContentComponent } from './components/layout/main-content/main-cont
 import { NavComponent } from './components/layout/nav/nav.component';
 import { TaskComponent } from './components/tasks/task/task.component';
 import { TestComponent } from './components/tests/test/test.component';
+import { DisplayListLanguagesComponent } from './components/tests/display-list-languages/display-list-languages.component';
+import { DisplayDetailLanguageComponent } from './components/tests/display-detail-language/display-detail-language.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { TestComponent } from './components/tests/test/test.component';
     MainContentComponent,
     NavComponent,
     TaskComponent,
-    TestComponent
+    TestComponent,
+    DisplayListLanguagesComponent,
+    DisplayDetailLanguageComponent
   ],
   imports: [
     BrowserModule,
