@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { MainContentComponent } from './components/layout/main-content/main-content.component';
 import { NavComponent } from './components/layout/nav/nav.component';
 import { TaskComponent } from './components/tasks/task/task.component';
+import { TestComponent } from './components/tests/test/test.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TaskComponent } from './components/tasks/task/task.component';
     HeaderComponent,
     MainContentComponent,
     NavComponent,
-    TaskComponent
+    TaskComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
