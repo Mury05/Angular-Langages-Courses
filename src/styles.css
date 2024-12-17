@@ -3,3 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.scrollbar{
+  overflow-y: auto;
+  scrollbar-color: #009688 #e5eceb;
+  scrollbar-width: thin;
+  overflow-x: none;
+}
