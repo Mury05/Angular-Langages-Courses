@@ -16,6 +16,8 @@ import { TaskComponent } from './components/tasks/task/task.component';
 import { TestComponent } from './components/tests/test/test.component';
 import { DisplayListLanguagesComponent } from './components/tests/display-list-languages/display-list-languages.component';
 import { DisplayDetailLanguageComponent } from './components/tests/display-detail-language/display-detail-language.component';
+import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { DisplayDetailLanguageComponent } from './components/tests/display-detai
     TaskComponent,
     TestComponent,
     DisplayListLanguagesComponent,
-    DisplayDetailLanguageComponent
+    DisplayDetailLanguageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

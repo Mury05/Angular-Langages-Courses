@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TaskGroups } from '../../../models/task-groups';
+import { Task } from '../../../models/task';
 
 @Component({
   selector: 'app-task-group',
@@ -10,4 +11,11 @@ import { TaskGroups } from '../../../models/task-groups';
 })
 export class TaskGroupComponent {
   @Input() tasksGroup!: TaskGroups;
+
+  @Output() newTask = new EventEmitter<Task>();
+
+  sendToParent(task: Task){
+    // console.log(task);
+    this.newTask.emit(task)
+  }
 }
