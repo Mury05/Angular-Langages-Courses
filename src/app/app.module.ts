@@ -18,6 +18,9 @@ import { DisplayListLanguagesComponent } from './components/tests/display-list-l
 import { DisplayDetailLanguageComponent } from './components/tests/display-detail-language/display-detail-language.component';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { GamesComponent } from './components/games/games.component';
+import { FifaComponent } from './components/games/fifa/fifa.component';
+import { GtaComponent } from './components/games/gta/gta.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     TestComponent,
     DisplayListLanguagesComponent,
     DisplayDetailLanguageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GamesComponent,
+    FifaComponent,
+    GtaComponent
   ],
   imports: [
     BrowserModule,

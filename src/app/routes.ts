@@ -3,6 +3,9 @@ import { MainContentComponent } from "./components/layout/main-content/main-cont
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { RegisterFormComponent } from "./components/auth/register-form/register-form.component";
 import { LoginFormComponent } from "./components/auth/login-form/login-form.component";
+import { GamesComponent } from "./components/games/games.component";
+import { FifaComponent } from "./components/games/fifa/fifa.component";
+import { GtaComponent } from "./components/games/gta/gta.component";
 
 const routes: Routes = [
   {
@@ -20,6 +23,20 @@ const routes: Routes = [
   {
     path: "register",
     component: RegisterFormComponent
+  },
+  {
+    path: "games",
+    component: GamesComponent,
+    children: [
+      {
+        path: "fifa",
+        component: FifaComponent
+      },
+      {
+        path: "gta",
+        component: GtaComponent
+      },
+    ]
   },
   {
     path: "**",
