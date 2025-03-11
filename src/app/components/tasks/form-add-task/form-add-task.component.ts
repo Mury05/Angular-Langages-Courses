@@ -22,7 +22,7 @@ export class FormAddTaskComponent {
           statut: false
         }
       )
-      // console.log(this.newTask.trim());
+      console.log(this.newTask.trim());
       this.newTask = ''
     }
   }

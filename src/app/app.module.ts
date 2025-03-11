@@ -16,7 +16,7 @@ import { TaskComponent } from './components/tasks/task/task.component';
 import { TestComponent } from './components/tests/test/test.component';
 import { DisplayListLanguagesComponent } from './components/tests/display-list-languages/display-list-languages.component';
 import { DisplayDetailLanguageComponent } from './components/tests/display-detail-language/display-detail-language.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GamesComponent } from './components/games/games.component';
 import { FifaComponent } from './components/games/fifa/fifa.component';
@@ -47,6 +47,7 @@ import { GtaComponent } from './components/games/gta/gta.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

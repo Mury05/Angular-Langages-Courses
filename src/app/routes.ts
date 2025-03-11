@@ -6,15 +6,18 @@ import { LoginFormComponent } from "./components/auth/login-form/login-form.comp
 import { GamesComponent } from "./components/games/games.component";
 import { FifaComponent } from "./components/games/fifa/fifa.component";
 import { GtaComponent } from "./components/games/gta/gta.component";
+import { AuthGuard } from "./auth/guard.guard";
 
 const routes: Routes = [
   {
     path: '',
-    component: MainContentComponent
+    component: MainContentComponent,
+    // canActivate: [AuthGuard],
   },
   {
     path: "show/:id",
-    component: MainContentComponent
+    component: MainContentComponent,
+    // canActivate: [AuthGuard],
   },
   {
     path: "login",
@@ -27,6 +30,7 @@ const routes: Routes = [
   {
     path: "games",
     component: GamesComponent,
+    // canActivate: [AuthGuard],
     children: [
       {
         path: "fifa",
